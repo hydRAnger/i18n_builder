@@ -1,0 +1,17 @@
+{
+  "name": "i18n_builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "extract": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/translate": "^4.1.0",
+    "commander": "^2.20.0",
+    "htmlparser2": "^3.10.1"
+  }
+}

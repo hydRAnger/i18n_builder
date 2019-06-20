@@ -6,7 +6,7 @@ const QUOTA_DURATION = 100; // 100 seconds for API quota duration
 const LIMIT_CHAR_PER_REQUEST = 30000;
 const LIMIT_CHAR_PER_100_SECONDS = 100000;
 
-const translateOnRateLimit = (target, output) => {
+module.exports = (target, output) => {
   return async (sourceHash) => {
     let onTranslatingCharCount = 0; // count chars that were translating
     const resultHash = {};
@@ -86,5 +86,3 @@ const writeOutput = (resultHash, output) => {
     }
   });
 };
-
-module.exports = translateOnRateLimit;
